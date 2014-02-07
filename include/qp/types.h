@@ -89,11 +89,7 @@
 		typedef unsigned int uint_t;
 	#endif
 	#ifndef real_t
-		#ifdef __USE_SINGLE_PRECISION__
-			typedef float real_t;
-		#else
-			typedef double real_t;
-		#endif	/* __USE_SINGLE_PRECISION__ */
+		typedef float real_t;
 	#endif
 #else	/* __MATLAB__ */
 	typedef int int_t;
