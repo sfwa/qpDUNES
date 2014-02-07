@@ -115,9 +115,9 @@ OPTION( QPDUNES_WITH_OPENMP
 #
 ################################################################################
 
-SET( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC -Wall -Wextra -pedantic -Wshadow -g -finline-functions -DLINUX -D__NO_COPYRIGHT__ -D__DEBUG__ -D__FULL_LOGGING__ -std=c99" )
+SET( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -fPIC -Wall -Wextra -pedantic -Wshadow -g -finline-functions -DLINUX -D__NO_COPYRIGHT__ -D__DEBUG__ -D__FULL_LOGGING__ -std=c99" )
 
-SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -pedantic -Wshadow -g -finline-functions -fPIC -DLINUX" )
+SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -Wall -Wextra -pedantic -Wshadow -g -finline-functions -fPIC -DLINUX" )
 
 IF ( QPDUNES_WITH_OPENMP )
 	FIND_PACKAGE( OpenMP )
